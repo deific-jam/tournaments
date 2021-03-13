@@ -49,6 +49,17 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .left{
     font-size: 1.7rem;
     cursor: pointer;
