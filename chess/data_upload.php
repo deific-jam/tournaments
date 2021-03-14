@@ -10,9 +10,9 @@ if(!empty($in_name) || !empty($in_username) || !empty($in_email) || !empty($in_w
 	|| !empty($in_zoom)){
 		
 		$servername = "localhost";
-		$dbusername = "id6397543_register";
+		$dbusername = "id16371456_userwebsite";
 		$dbpassword = "/_K@S\3q7>?Im0kW";
-		$dbname = "id6397543_registration"
+		$dbname = "id16371456_dbparticipants";
 		
 		// Create connection
 		$conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
