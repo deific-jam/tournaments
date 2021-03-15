@@ -26,7 +26,7 @@
 			}
 			
 			//username validation
-			if (strpos($str, ' ') !== false){
+			if (strpos($in_uname, ' ') !== false){
 			    die("No Spaces in Username");
 			}else{
 				$validate = "select * from partlist where username='$in_uname'";

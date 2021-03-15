@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="guidelines.css">
 </head>
 
-<body onload="list_display.php">
+<body>
     <section class="nav">
         <div class="left">
             <img src="./1510849.png" alt="">
@@ -33,5 +33,27 @@
             </button>
         </div>
     </section>
+	
+	<table>
+		<tr>
+			<th>No.</th>
+			<th>Name</th>
+			<th>Username</th>
+		</tr>
+		
+		<?php
+			include 'list_display.php';
+			get_data();
+			if($data->num_rows > 0){
+				while($rows = $data->fetch_assoc)()){
+					echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["username"]."</td></tr>";
+				}echo "</table>";
+			}else{
+				echo "No one has registered yet.";
+			}
+			$conn->close();
+		?>
+	
+		
 	</body>
 </html>
