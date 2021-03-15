@@ -26,7 +26,9 @@
 			}
 			
 			//username validation
-			if(!empty($in_uname)){
+			if (strpos($str, ' ') !== false){
+			    die("No Spaces in Username");
+			}else{
 				$validate = "select * from partlist where username='$in_uname'";
 				$result = mysqli_query($conn, $validate);
 				if(mysqli_num_rows($result)>0){
