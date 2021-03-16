@@ -75,9 +75,10 @@
 			}
 			
 			//data entry
-			$entry = "INSERT Into partlist (name, username, email, wanum, zoom) VALUES ('$in_name', '$in_uname', '$in_email', '$in_wanum', '$in_zoom')";
+			$entry = "INSERT Into partlist (name, username, email, wanum, zoom, payment) VALUES ('$in_name', '$in_uname', '$in_email', '$in_wanum', '$in_zoom', false)";
 			if($conn->query($entry)===true){
 				echo "New Data Inserted";
+				//header("Refresh:2; url='https://chess-winnertakesall.000webhostapp.com/index.html'");
 			}else{
 				echo "Error: " . $entry . "<br>" . $conn->error;
 			}

@@ -33,27 +33,8 @@
             </button>
         </div>
     </section>
+    
+    <iframe src="list_display.php" scrolling="no" height="720px" width="100%"></iframe>
 	
-	<table>
-		<tr>
-			<th>No.</th>
-			<th>Name</th>
-			<th>Username</th>
-		</tr>
-		
-		<?php
-			include 'list_display.php';
-			get_data();
-			if($data->num_rows > 0){
-				while($rows = $data->fetch_assoc)()){
-					echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["username"]."</td></tr>";
-				}echo "</table>";
-			}else{
-				echo "No one has registered yet.";
-			}
-			$conn->close();
-		?>
-	
-		
 	</body>
 </html>
