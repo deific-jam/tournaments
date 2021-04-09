@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+	<meta charset ="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console</title>
+	
+</head>
+
+<body>
+    <h1>ADMIN PAGE</h1>
+    <h3>Update Status</h3>
+	<form action="update.php" method="POST">
+	    <input type="password" placeholder="Auth Key" name="auth"><br>
+		<input type="text" placeholder="ID" required name="id"><br>
+		<input type="text" placeholder="Status" required name="status"><br>
+		<button type="submit">Update</button>
+	</form>		
+	
+	    <h3>Display All Data</h3>	<form action="admin_display.php" method="POST">	    <input type="password" placeholder="Auth Key" name="auth"><br>		
+	    <button type="submit">Display</button>	
+	</form>
+	
+	<h1>B A N</h1>
+	<h3>Add IP</h3>
+	<form action="add_ban.php" method="POST">
+	    <input type="password" placeholder="Authkey" name="auth"><br>
+	    <input type="text" placeholder="IP" name="ban_add"><br>
+	    <input type="text" placeholder="Reason" name="ban_reason"><br>
+	    <button type="submit">Ban</button>
+	</form>
+	
+	<h3>Remove IP</h3>
+	<form action="remove_ban.php" method="POST">
+	    <input type="password" placeholder="Authkey" name="auth"><br>
+	    <input type="text" placeholder="ID" name="ipid"><br>
+	    <button type="submit">Unban</button>
+	</form>
+	
+	<h3>Show All IP</h3>
+	<form action="display_ban.php" method="POST">
+	    <input type="password" placeholder="Authkey" name="auth"><br>
+	    <button type="submit">Ban List</button>
+	</form>
+	
+	
+	<h1>DANZER ZONE</h1>
+	<h3>Remove Participant</h3>
+	<form action="delete.php" method="POST">
+	    <input type="password" placeholder="Auth Key" name="auth"><br>
+		<input type="text" placeholder="ID" required name="id"><br>
+		<button type="submit">Remove</button>
+	</form>
+	
+	<h3>Reset Data</h3>
+	<form action="reset.php" method="POST">
+	    <input type="password" placeholder="Auth Key" name="auth"><br>
+	    <button type="submit">Reset</button>
+	</form>
+</body>
+
+</html>

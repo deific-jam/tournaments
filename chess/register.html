@@ -1,51 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Tourney</title>
-    <link rel="stylesheet" href="register.css">
-</head>
-
-<body>
-    <section class="nav">
-        <div class="left">
-            <img src="./1510849.png" alt="">
-            <h1>Chess</h1>
-        </div>
-
-        <div class="mid">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="guidelines.html">Guidelines</a></li>
-                <!-- <li><a href="#">Schedule</a></li> -->
-                <!-- <li><a href="#">Participants</a></li> -->
-                <!-- <li><a href="#">Submit Result</a></li> -->
-                <li><a href="#">Updates</a></li>
-            </ul>
-        </div>
-
-        <div class="right">
-            <button class="btn">
-                Contact Us
-            </button>
-        </div>
-    </section>
-
-
-    <section class="regbody">
-        <!--<form action="" class="form">-->
-		<form action="data_insert.php" method="POST" class="form">
-            <h1>Registration Form</h1>
-                
-                <input type="text" placeholder="Name" required name="Name">
-                <input type="text" placeholder="Username" required name="Username">
-                <input type="text" placeholder="E-mail" required name="Email">
-                <input type="text" placeholder="Whatsapp Number" required name="Whatsapp">
-                <input type="text" placeholder="Zoom - Username" required name="Zoom">
-            
-            <button class="submit">submit</button>
-        </form>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess | Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <section class="nav">
+        <div class="left">
+            <img src="./1510849.png" alt="">
+            <h1>Chess</h1>
+        </div>
+
+        <div class="mid">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guidelines.html">Guidelines</a></li>
+                <!-- <li><a href="#">Schedule</a></li> -->
+                <!-- <li><a href="#">Participants</a></li> -->
+                <!-- <li><a href="#">Submit Result</a></li> -->
+                <li><a href="#">Updates</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">
+                Contact Us
+            </button>
+        </div>
+    </section>
+
+
+    <section class="regbody">
+        <!--<form action="" class="form">-->
+		<form action="data_insert.php" method="POST" class="form">
+            <h1>Registration Form</h1>
+                
+                <input type="text" placeholder="Name" required maxlength="30" name="Name">
+                <input type="text" placeholder="Username" required maxlength= "30" name="Username">
+                <input type="text" placeholder="E-mail" required maxlength = "40" name="Email">
+                <input type="text" placeholder="Whatsapp Number" required maxlength = "10" name="Whatsapp">
+                <input type="text" placeholder="Zoom - Username" required maxlength = "10" name="Zoom">
+            
+            <button class="submit">submit</button>
+        </form>
+    </section>
 </body>
